@@ -837,7 +837,7 @@ footer .footer-nav .nav-list li:last-child a::after {
 }
 
 footer p::after {
-    content: " · Copyright :) Make it so cool! By Pavle Pritula ·";
+    content: " · Copyright :) By Pavle Pritula ·";
     position: absolute;
     left: 50%;
     top: 100%;
@@ -1105,6 +1105,14 @@ footer:hover p::after {
     footer .footer-wrapper .wrapper {
         flex-direction: column;
         gap: 30px;
+    }
+
+    footer .footer-wrapper .wrapper {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+        text-align: center;
+                overflow: hidden;
     }
 
     footer .footer-wrapper .logo { font-size: 3.5em; }
