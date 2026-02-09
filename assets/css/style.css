@@ -1042,6 +1042,13 @@ footer:hover p::after {
     nav li {
         padding: 12px 16px;
         font-size: 14px;
+
+        & a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 14px;
+            font-family: 'Roboto Mono', monospace;
+        }
     }
 
     .logo { font-size: 22px; }
@@ -1065,7 +1072,7 @@ footer:hover p::after {
     .hero-statistics h2 { font-size: 32px; }
     .shop-btn { 
         padding: 10px 24px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .trends-wrapper, .lastest-collection-wrapper, .faq-wrapper {
