@@ -310,8 +310,45 @@ nav a, .main, .trends-icon, footer .footer-wrapper  {
     position: relative;
 }
 
+/* Solution with background image (linear gradient)  */
+/* .shop-now a {
+    color: var(--main-color);
+    background-color: var(--dark-12);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 12px;
+    padding: 18px 24px;
+    background-image: 
+        repeating-linear-gradient(-18deg, var(--brown-60), var(--brown-60) 5.53px, transparent 7px, transparent 17.27px, var(--brown-60) 20px), 
+        repeating-linear-gradient(72deg, var(--brown-60), var(--brown-60) 5.53px, transparent 7px, transparent 17.27px, var(--brown-60) 20px), 
+        repeating-linear-gradient(162deg, var(--brown-60), var(--brown-60) 5.53px, transparent 7px, transparent 17.27px, var(--brown-60) 20px), 
+        repeating-linear-gradient(252deg, var(--brown-60), var(--brown-60) 5.56px, transparent 7px, transparent 17.27px, var(--brown-60) 20px);
+    background-size: 2px calc(100% + 21.03px), calc(100% + 21.03px) 2px, 2px calc(100% + 21.03px), calc(100% + 21.03px) 2px;
+    background-position: 0 0, 0 0, 100% 0, 0 100%;
+    background-repeat: no-repeat;
+    animation: move-border 1s infinite linear;
+}
+
+.shop-now a::after {
+    content: url(../img/icons/arrow-right-top.png);
+    width: 24px;
+    height: 24px;
+}
+
 .shop-btn:hover {
-    background: var(--brown-60);
+    background-image: 
+        repeating-linear-gradient(-18deg, var(--brown-80), var(--brown-80) 5.53px, transparent 7px, transparent 17.27px, var(--brown-80) 20px), 
+        repeating-linear-gradient(72deg,  var(--brown-80), var(--brown-80) 5.53px, transparent 7px, transparent 17.27px, var(--brown-80) 20px), 
+        repeating-linear-gradient(162deg, var(--brown-80), var(--brown-80) 5.53px, transparent 7px, transparent 17.27px, var(--brown-80) 20px), 
+        repeating-linear-gradient(252deg, var(--brown-80), var(--brown-80) 5.56px, transparent 7px, transparent 17.27px, var(--brown-80) 20px);
+    background-color: var(--brown-60);
+} */
+
+.shop-btn:hover {
+    background-color: var(--brown-60);
 }
 
 .hero-wrapper {
@@ -826,6 +863,13 @@ footer:hover p::after {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
 }
+
+/* For second solution of border move  */
+
+/* @keyframes move-border {
+    from { background-position: 0 0,-21.03px 0,100% -21.03px,0 100%; }
+    to { background-position: 0 -21.03px,0 0,100% 0,-21.03px 100%; }
+} */
 
 @keyframes move-border {
     0% {
